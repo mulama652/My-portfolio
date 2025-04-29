@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(46, 30, 46)
+}
+.profile-pic{
+    width: auto;
+    height: 250px;
+    border-radius: 50%;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.name {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: rgb(252, 249, 249);
+    font-size: 24px;
+    font-weight: bold;
+}
+.web-skills{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    color: rgb(245, 243, 243);
+}
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    font-family:Arial;
+    font-weight: bold,
+    /* text- decoration: break-inside; */
+}
+
+
+.about-section {
+    background-color: rgb(8, 189, 132);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+.story {
+    color: white;
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 10px 0;
+    text-align: justify;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-justify: inter-word;
+    text-indent: 2em;
+    text-transform: none;
+    text-shadow: none;
+    text-wrap: normal;
+}
+.note{
+    color: white;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    text-align: justify;
+    text-indent: 2em;
+    text-justify: inter-word;
+    line-height: 1.6;
+    text-wrap: normal;
+}
+.My{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    text-decoration: none;
+    text-justify: inter-word;
+    text-indent: 2em;
+    text-transform: none;
+    text-shadow: none;
+    text-wrap: normal;
+}
+.poster {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+.poster-pic{
+    width: auto;
+    height: 250px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+.N{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px 0; 
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+}
+
+
+  .poster-section {
+    text-align: center;
+    margin: 40px auto;
+    padding: 20px;
+  }
+  
+  .poster-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  .poster-item {
+    background-color: #fafafa; /* Soft Navy Blue */
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px; /* You can adjust width if needed */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .poster-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .poster-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .poster-description {
+    margin-top: 10px;
+    color: #000000; /* Warm Gold */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+  .footer {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer-content p {
+    margin: 8px 0;
+    line-height: 1.6;
+}
+  

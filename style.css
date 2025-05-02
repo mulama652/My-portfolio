@@ -1,9 +1,8 @@
 body {
   background-color: rgb(46, 30, 46);
   font-family: Poppins, sans-serif;
-
+ 
 }
-
 .hero-section {
   /* background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGdyYXkgbmF0dXJhbCUyMGJsdXUlMjB3aGl0ZXxlbnwwfHx8fDE2OTY5NTQ1NzE&ixlib=rb-4.0.3&q=80&w=1080'); */
   background-size: cover;
@@ -81,27 +80,32 @@ h1 {
 
 
 .about-section {
-  background-color: rgb(8, 189, 132);
-  padding: 20px;
+  background-color: rgb(34, 42, 50);
+  padding: 15px; /* Reduced padding */
   border-radius: 10px;
-  margin: 20px auto;
+  margin: 15px auto; /* Reduced margin */
   max-width: 800px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 
 }
 
+.about-section .about-heading,
+.about-section h2 {
+  color: white;
+}
+
 .story {
   max-width: 800px;
-  margin: 20px auto; /* Adjusted margin for better spacing */
-  padding: 20px; /* Reduced padding to fit within the viewport */
+  margin: 15px auto; /* Reduced margin */
+  padding: 15px; /* Reduced padding */
   background-color: #ffffff;
   color: #333333;
   font-size: 1.125rem;
-  line-height: 1.75;
+  line-height: 1.6; /* Slightly reduced line height */
   font-family: 'Roboto', sans-serif;
   text-align: justify;
-  text-indent: 2em;
+  text-indent: 1.5em; /* Reduced text indent */
   border-radius: 12px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   border: 1px solid #e0e0e0;
@@ -120,23 +124,20 @@ h1 {
   line-height: 1;
   padding-right: 8px;
   color: #1976d2;
+  transition: color 0.3s ease; /* Added transition for hover effect */
 }
 
+.story p:first-of-type::first-letter:hover {
+  color: #ff5722; /* Changes color on hover */
+}
 
 .My {
   color: rgb(255, 255, 255);
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 1.8; /* Increased line height for better readability */
   margin: 20px 0;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  font-weight: normal;
-  text-decoration: none;
-  text-justify: inter-word;
-  text-indent: 2em;
-  text-transform: none;
-  text-shadow: none;
-  text-wrap: normal;
+  text-align: justify; /* Changed alignment for better text flow */
+  font-family: 'Arial', sans-serif;
 }
 
 .poster {
@@ -276,4 +277,35 @@ h1 {
 .reference-description {
   font-size: 14px;
   color: #555;
+}
+/* Services-Section */
+#services {
+  padding: 40px;
+  background-image: url('your-image.jpg'); /* Replace with your image path */
+  background-size: cover;       /* Makes sure the image covers the entire container */
+  background-position: center;  /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: white;  
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.service-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.service-card h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #666;
 }

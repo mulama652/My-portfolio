@@ -18,8 +18,8 @@ body {
 }
 
 .profile-pic {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
@@ -59,7 +59,7 @@ body {
 .name {
   text-align: center;
   font-family: Arial, sans-serif;
-  color: black;
+  color: rgb(241, 240, 240);
   font-size: 24px;
   font-weight: bold;
 }
@@ -67,7 +67,7 @@ body {
 .web-skills {
   text-align: center;
   font-family: Arial, sans-serif;
-  color: black;
+  color: rgb(254, 252, 252);
 }
 
 h1 {

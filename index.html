@@ -6,139 +6,264 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ian Mulama</title>
   <link rel="stylesheet" href="style.css">
+  <script>
+    // Smooth scroll to main content
+    function enterPortfolio() {
+      document.querySelector('.landing-page').classList.add('hide');
+      document.getElementById('main-content').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </head>
-
 <body>
-
-  <header>
-    <!-- icon -->
-    <i class="fa fa-envelope-open" aria-hidden="true"></i>
-
-  </header>
-
-  <!-- hero section  -->
-  <section class="hero-section">
-    <img src="image/My photo.jpg" alt="My Photo" width="200" height="200" class="profile-pic">
-    <p class="name">Hi, I'm Ian Mulama, a creative designer and developer...</p>
-    <p class="web-skills">Web Developer | Designer | Video Editor
-
-    </p>
-  </section>
-  <!-- about section -->
-  <section id="about" class="about-section">
-    <h2 class="about-heading">About Me</h2>
-    <h2>The Skillful Journey</h2>
-    <p class="story">In the heart of Nairobi, my journey as a dedicated and multi-skilled individual has been shaped by a passion for learning, service, and creativity. My name is Ian Mulama, a teacher trainee at Tangaza University specializing in History and Kiswahili. My academic and professional path has been deeply influenced by both formal education and hands-on experiences that continue to refine my teaching philosophy and personal growth.</p>
-    <p class="story">Between May and August 4th, 2024, I undertook my school practice at Nkaimurunya Comprehensive School. This experience was transformative. It was my first opportunity to actively engage with learners in a real classroom setting, where I applied theoretical knowledge into practical teaching. From preparing schemes of work to delivering lessons and assessing student understanding, I grew more confident in managing classroom dynamics, understanding student needs, and tailoring my approach to accommodate diverse learning styles.</p>
-    <p class="story">Following this, I began my teaching practice at the same school from January 5th to April 4th, 2025. During this period, I further deepened my understanding of the learning and teaching environment. I learned to embrace flexibility, patience, and creativity in lesson delivery. I also developed a stronger sense of responsibility and professionalism, ensuring that every lesson was purposeful and engaging. This exposure taught me valuable skills in classroom management, effective communication, and curriculum implementation, which I believe will significantly enhance my adaptability and effectiveness in any future teaching environment.</p>
-    <p class="story">Beyond the classroom, I actively participated in the 2022 General Elections in Kenya, serving as a clerk with the Independent Electoral and Boundaries Commission (IEBC). This role demanded integrity, accuracy, and the ability to work under pressure. It strengthened my skills in public service, data management, and handling sensitive responsibilities with utmost confidentiality and care.</p>
-    <p class="story">Creatively, I have also grown through my involvement with Karen Africa Gospel Church, where I serve in the media team. My responsibilities include photography, video editing, and poster design. Capturing moments during services and creating uplifting visual content has taught me to observe deeply, tell compelling stories, and appreciate the power of visual communication. Through this, I’ve enhanced my technical skills in video production and graphic design, using tools that allow me to communicate messages effectively and artistically.</p>
-    <p class="story">These experiences—whether in the classroom, during national service, or behind a camera lens—have contributed to my holistic development. They have taught me the value of discipline, empathy, teamwork, and innovation. I believe that every skill I’ve acquired is a gift meant to be used for the betterment of others.</p>
-    <p class="story">As I continue this journey, I remain committed to becoming a well-rounded educator and professional—someone who not only teaches but inspires, leads with purpose, and serves with integrity.</p>
-  </section>
-  <div>
-    <h1>Poster Designs</h1>
-    <p class="N">Here are my poster designs</p>
-  </div>
-  <!-- container -->
-  <div class="poster-container">
-    <div class="poster-item">
-      <img src="image/Ignite.jpeg" alt="Ignite" width="200" height="200" class="poster-pic">
-      <p class="poster-description">Ignite Campus</p>
-    </div>
-    <div class="poster-item">
-      <img src="image/prayeragc.jpeg" alt="prayeragc">
-      <p class="poster-description">Prayer Service</p>
-    </div>
-
-    <div class="poster-item">
-      <img src="image/Kesha.jpeg" alt="Kesha Poster">
-      <p class="poster-description">Kesha Overnight Worship Poster</p>
-    </div>
-
-    <div class="poster-item">
-      <img src="image/Dinner.jpeg" alt="Dinner">
-      <p class="poster-description">Valentines Dinner</p>
-    </div>
-
-    <div class="poster-item">
-      <img src="image/Un.jpeg" alt="Un">
-      <p class="poster-description">UN Career Expoxision</p>
-    </div>
-  </div>
-  <!-- service-section -->
-  <section id="services">
-    <h2>Services I Offer</h2>
-    <div class="services-container">
-      <div class="service-card">
-        <h3>Graphic Design</h3>
-        <p>I create eye-catching posters, social media graphics, and flyers tailored to your brand and message.</p>
-      </div>
-      <div class="service-card">
-        <h3>Web Design</h3>
-        <p>Design responsive and user-friendly websites using HTML, CSS, and modern design principles.</p>
-      </div>
-      <div class="service-card">
-        <h3>Web Development</h3>
-        <p>Build interactive and functional websites using HTML, CSS, JavaScript, and backend tools as needed.</p>
-      </div>
-      <div class="service-card">
-        <h3>Social Media Management</h3>
-        <p>Manage your brand presence on platforms like Instagram and Facebook, including content creation and scheduling.</p>
-      </div>
-      <div class="service-card">
-        <h3>Business Automation</h3>
-        <p>Streamline your business processes using automation tools to increase efficiency and productivity.</p>
-      </div>
-      <div class="service-card">
-        <h3>Teaching & Tutoring</h3>
-        <p>Offer personalized tutoring in Kiswahili, History, and digital skills for learners of all levels.</p>
-      </div>
+  <section class="landing-page">
+    <div class="landing-content">
+      <img src="image/My photo.jpg" alt="My Photo" class="landing-profile-pic">
+      <p class="landing-name">Hi, I'm Ian Mulama, a creative designer and developer...</p>
+      <p class="landing-skills">Web Developer | Designer | Video Editor</p>
+      <button class="enter-btn" onclick="enterPortfolio()">Enter Portfolio</button>
     </div>
   </section>
-  <!-- References Section -->
-<section class="references-section">
-  <h2 class="section-title">References</h2>
-  <div class="references-container">
-    <!-- Reference 1 -->
-    <div class="reference-box">
-      <img src="image/Dennis.jpg" alt="Dennis 1" class="reference-img">
-      <h3 class="reference-name">Dennis Nderitu</h3>
-      <p class="reference-description">
-        A senior teacher and mentor during my teaching practice. He guided me on classroom management and effective lesson delivery.
-      </p>
-    </div>
 
-    <!-- Reference 2 -->
-    <div class="reference-box">
-      <img src="image/Isaac.jpeg" alt="Isaac 2" class="reference-img">
-      <h3 class="reference-name">Isaac Lemayanne</h3>
-      <p class="reference-description">
-        My supervisor at IEBC during the 2022 elections. Her leadership and attention to detail taught me the importance of accuracy and integrity in public service.
-      </p>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#home" class="nav-logo">Portfolio</a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skillful-journey">About</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#virtual-assistance">Service</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Reference 3 -->
-    <div class="reference-box">
-      <img src="image/Rev.jpg" alt="Rev 3" class="reference-img">
-      <h3 class="reference-name">Rev. Jeff Cherry</h3>
-      <p class="reference-description">
-        Pastor at Karen Africa Gospel Church and my mentor in media ministry. He nurtured my creativity and spiritual leadership.
-      </p>
+  <div id="main-content">
+    <!-- <header class="header">
+      <a href="#" class="logo">Porfolio</a>
+     <nav class="navbar">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Skills</a>
+          <a href="#">Portfolio</a>
+          <a href="#">Contact</a>
+     </nav>
+    </header> -->
+    <section class="home" id="home"> 
+      <div class="home-contact">
+        <h3>Welcome to My Portfolio</h3>
+        <h1>Explore my work and skills as a designer and developer.</h1>
+      </div>
+      <div class="hero-section">
+        <img src="image/My photo.jpg" alt="My Photo" width="200" height="200" class="profile-pic">
+        <p class="name">Hi, I'm Ian Mulama, a creative designer and developer...</p>
+        <p class="web-skills">Web Developer | Designer | Video Editor</p>
+      </div>
+    </section>
+    <!-- about section -->
+    <section id="about" class="about-section">
+      <h2 class="about-heading">About Me</h2>
+      <h2 id="skillful-journey">The Skillful Journey</h2>
+      <div class="story-wrapper">
+        <p class="story">
+          Based in Nairobi, I am Ian Mulama—a passionate, multi-skilled professional dedicated to excellence in education, design, and digital media. As a teacher trainee at Tangaza University, specializing in History and Kiswahili, I blend academic rigor with hands-on experience to deliver meaningful learning outcomes and creative solutions.
+        </p>
+        <p class="story">
+          My teaching journey began with a transformative school practice at Nkaimurunya Comprehensive School (May–August 2024). Immersed in real classroom dynamics, I honed my ability to translate theory into practice—preparing schemes of work, delivering engaging lessons, and adapting to diverse learning needs. This experience strengthened my confidence, adaptability, and commitment to student success.
+        </p>
+        <p class="story">
+          Continuing at the same school (January–April 2025), I deepened my expertise in classroom management, curriculum implementation, and effective communication. I embraced flexibility, patience, and creativity, ensuring every lesson was purposeful and impactful. These skills empower me to create positive, results-driven learning environments.
+        </p>
+        <p class="story">
+          My commitment to service extends beyond the classroom. As a clerk with the Independent Electoral and Boundaries Commission (IEBC) during Kenya’s 2022 General Elections, I demonstrated integrity, precision, and resilience under pressure. This role sharpened my skills in public service, data management, and confidential operations—qualities I bring to every professional engagement.
+        </p>
+        <p class="story">
+          Creativity is at the heart of my work. Serving on the media team at Karen Africa Gospel Church, I specialize in photography, video editing, and poster design. I capture moments, craft compelling visual stories, and deliver uplifting content that resonates. My technical proficiency in video production and graphic design ensures every message is communicated with clarity and artistry.
+        </p>
+        <p class="story">
+          These diverse experiences have shaped me into a disciplined, empathetic, and innovative professional. I value teamwork, continuous learning, and using my skills to make a positive impact. Every project I undertake is guided by a commitment to quality, integrity, and client satisfaction.
+        </p>
+        <p class="story">
+          As I advance in my career, I am dedicated to inspiring others, leading with purpose, and delivering solutions that exceed expectations. Let’s collaborate to bring your vision to life.
+        </p>
+      </div>
+    </section>
+    <div>
+      <h1>Poster Designs</h1>
+      <p class="N">Here are my poster designs</p>
     </div>
-  </div>
-</section>
-  <script src="script.js"></script>
-  <footer class="footer">
-    <div class="footer-content">
-      <p>Contact Info: <br>
-        Phone: +254 0114 272 741 <br>
-        Email: ianmulama99@gmail.com <br>
-        Address: 974 - 00502 Langata, Nairobi
-      </p>
-      <p>&copy; 2025 Ian Mulama. All rights reserved.</p>
+    <!-- container -->
+    <div class="poster-container">
+      <div class="poster-item">
+        <img src="image/Ignite.jpeg" alt="Ignite" width="200" height="200" class="poster-pic">
+        <p class="poster-description">Ignite Campus</p>
+      </div>
+      <div class="poster-item">
+        <img src="image/prayeragc.jpeg" alt="prayeragc">
+        <p class="poster-description">Prayer Service</p>
+      </div>
+
+      <div class="poster-item">
+        <img src="image/Kesha.jpeg" alt="Kesha Poster">
+        <p class="poster-description">Kesha Overnight Worship Poster</p>
+      </div>
+
+      <div class="poster-item">
+        <img src="image/Dinner.jpeg" alt="Dinner">
+        <p class="poster-description">Valentines Dinner</p>
+      </div>
+
+      <div class="poster-item">
+        <img src="image/Un.jpeg" alt="Un">
+        <p class="poster-description">UN Career Expoxision</p>
+      </div>
     </div>
-  </footer>
-</body>
+    <!-- service-section -->
+    <section id="services">
+      <h2 id="skills">Services I Offer</h2>
+      <div class="services-container">
+        <div class="service-card">
+          <h3>Graphic Design</h3>
+          <p>I create eye-catching posters, social media graphics, and flyers tailored to your brand and message.</p>
+        </div>
+        <div class="service-card">
+          <h3>Web Design</h3>
+          <p>Design responsive and user-friendly websites using HTML, CSS, and modern design principles.</p>
+        </div>
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <p>Build interactive and functional websites using HTML, CSS, JavaScript, and backend tools as needed.</p>
+        </div>
+        <div class="service-card">
+          <h3>Social Media Management</h3>
+          <p>Manage your brand presence on platforms like Instagram and Facebook, including content creation and scheduling.</p>
+        </div>
+        <div class="service-card">
+          <h3>Business Automation</h3>
+          <p>Streamline your business processes using automation tools to increase efficiency and productivity.</p>
+        </div>
+        <div class="service-card">
+          <h3>Teaching & Tutoring</h3>
+          <p>Offer personalized tutoring in Kiswahili, History, and digital skills for learners of all levels.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Achievements section -->
+    <section id="achievements" class="achievements-section">
+      <h2 class="achievements-title">Achievements</h2>
+      <div class="achievement-item" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 32px;">
+        <img src="image/ALX.jpeg" alt="ALX Certificate" class="achievement-certificate">
+        <div class="achievement-details" style="max-width: 380px; text-align: left;">
+          <div style="background: #fff2cc; color: #333; border-radius: 8px; padding: 16px 18px; margin-bottom: 14px;">
+            <strong>About ALX:</strong><br>
+            The ALX program is a leading professional training initiative focused on empowering young Africans with in-demand digital, business, and virtual assistance skills. As a graduate of the ALX Virtual Assistant track, I have developed a robust foundation in supporting businesses and entrepreneurs remotely, ensuring productivity and efficiency in a digital-first world.
+          </div>
+          <div style="background: #fff2cc; color: #333; border-radius: 8px; padding: 16px 18px; margin-bottom: 14px;">
+            <strong>Virtual Assistant Skills Acquired:</strong>
+            <ul style="margin-left: 1em; margin-top: 10px;">
+              <li>Proficient writing</li>
+              <li>Effective communication</li>
+              <li>Technical proficiency</li>
+              <li>Critical thinking abilities</li>
+              <li>Accounting skills</li>
+              <li>Time management expertise</li>
+              <li>Organisational skills</li>
+              <li>Customer service excellence</li>
+            </ul>
+          </div>
+          <div style="background: #fff2cc; color: #333; border-radius: 8px; padding: 16px 18px;">
+            Through the ALX Virtual Assistant program, I have learned to deliver high-quality administrative and operational support, manage schedules, handle communications, and provide exceptional service to clients and teams. My training has equipped me to adapt quickly, solve problems efficiently, and contribute to business growth in a remote environment.
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Virtual Assistance Services Section -->
+    <section id="virtual-assistance" class="virtual-assistance-section">
+      <h2 class="virtual-title">Virtual Assistance Services</h2>
+      <p class="virtual-intro">
+        As a skilled Virtual Assistant, I help busy professionals and businesses stay organized, productive, and focused on what matters most. Here’s how I can support you:
+      </p>
+      <div class="virtual-services-grid">
+        <div class="virtual-service-card">
+          <img src="https://img.icons8.com/color/96/000000/gmail-new.png" alt="Gmail Management" class="virtual-icon">
+          <h3>Gmail Management</h3>
+          <p>Organize your inbox, filter important emails, respond promptly, and ensure you never miss a message.</p>
+        </div>
+        <div class="virtual-service-card">
+          <img src="https://img.icons8.com/color/96/000000/calendar--v1.png" alt="Scheduling Meetings" class="virtual-icon">
+          <h3>Scheduling Meetings</h3>
+          <p>Coordinate and schedule meetings, send invites, and manage reminders so your calendar runs smoothly.</p>
+        </div>
+        <div class="virtual-service-card">
+          <img src="https://img.icons8.com/color/96/000000/around-the-globe.png" alt="Travel Planning" class="virtual-icon">
+          <h3>Travel Planning</h3>
+          <p>Research destinations, book flights and hotels, and create detailed travel itineraries for business or leisure.</p>
+        </div>
+        <div class="virtual-service-card">
+          <img src="https://img.icons8.com/color/96/000000/edit-property.png" alt="Data Entry" class="virtual-icon">
+          <h3>Data Entry</h3>
+          <p>Accurately input, organize, and maintain your business data in spreadsheets, CRMs, or databases.</p>
+        </div>
+        <div class="virtual-service-card">
+          <img src="https://img.icons8.com/color/96/000000/google-slides.png" alt="Presentations" class="virtual-icon">
+          <h3>Prepare Presentations</h3>
+          <p>Create visually engaging PowerPoint or Google Slides presentations tailored to your needs.</p>
+        </div>
+        <div class="virtual-service-card">
+          <img src="https://img.icons8.com/color/96/000000/planner.png" alt="Calendar Management" class="virtual-icon">
+          <h3>Calendar Management</h3>
+          <p>Maintain and update your calendar, set reminders, and ensure you stay on top of all appointments and deadlines.</p>
+        </div>
+      </div>
+      <div class="virtual-note">
+        <strong>Let me handle your day-to-day tasks so you can focus on growing your business!</strong>
+      </div>
+    </section>
+    <!-- References Section -->
+  <section class="references-section">
+    <h2 class="section-title">References</h2>
+    <div class="references-container">
+      <!-- Reference 1 -->
+      <div class="reference-box">
+        <img src="image/Dennis.jpg" alt="Dennis 1" class="reference-img">
+        <h3 class="reference-name">Dennis Nderitu</h3>
+        <p class="reference-description">
+          A senior teacher and mentor during my teaching practice. He guided me on classroom management and effective lesson delivery.
+        </p>
+      </div>
+
+      <!-- Reference 2 -->
+      <div class="reference-box">
+        <img src="image/Isaac.jpeg" alt="Isaac 2" class="reference-img">
+        <h3 class="reference-name">Isaac Lemayanne</h3>
+        <p class="reference-description">
+          My supervisor at IEBC during the 2022 elections. Her leadership and attention to detail taught me the importance of accuracy and integrity in public service.
+        </p>
+      </div>
+
+      <!-- Reference 3 -->
+      <div class="reference-box">
+        <img src="image/Rev.jpg" alt="Rev 3" class="reference-img">
+        <h3 class="reference-name">Rev. Jeff Cherry</h3>
+        <p class="reference-description">
+          Pastor at Karen Africa Gospel Church and my mentor in media ministry. He nurtured my creativity and spiritual leadership.
+        </p>
+      </div>
+    </div>
+  </section>
+    <script src="script.js"></script>
+    <footer class="footer" id="contact">
+      <div class="footer-content">
+        <p>Contact Info: <br>
+          Phone: +254 0114 272 741 <br>
+          Email: ianmulama99@gmail.com <br>
+          Address: 974 - 00502 Langata, Nairobi
+        </p>
+        <p>&copy; 2025 Ian Mulama. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div></body>
 
 </html>

@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(46, 30, 46);
+  background-color: #181f2b; /* Deep blue/gray for a modern, professional look */
   font-family: Poppins, sans-serif;
  
 }
@@ -80,19 +80,19 @@ h1 {
 
 
 .about-section {
-  background-color: rgb(34, 42, 50);
-  padding: 15px; /* Reduced padding */
-  border-radius: 10px;
-  margin: 15px auto; /* Reduced margin */
-  max-width: 800px;
+  background: 
+    linear-gradient(120deg, rgba(25, 118, 210, 0.85) 0%, rgba(142, 36, 170, 0.85) 100%),
+    url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
+  /* The Unsplash image above is tech/portfolio themed. Replace with your own if desired. */
+  padding: 15px;
+  border-radius: 18px;
+  margin: 15px auto;
+  max-width: 900px;
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-}
-
-.about-section .about-heading,
-.about-section h2 {
-  color: white;
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.12), 0 2px 8px rgba(142, 36, 170, 0.10);
+  color: #fff;
+  position: relative;
+  overflow: hidden;
 }
 
 .story {
@@ -297,7 +297,7 @@ h1 {
 }
 
 .service-card {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
@@ -311,10 +311,531 @@ h1 {
 .service-card p {
   color: #0b0a0a;
 }
+
 /* icon */
 .icon {
   width: 50px;
   height: 50px;
   margin-bottom: 10px;
   color: #974141;
+}
+
+/* Landing Page Styles */
+.landing-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100vw;
+  background: 
+    linear-gradient(120deg, rgba(25, 118, 210, 0.85) 0%, rgba(46, 30, 46, 0.92) 100%),
+    url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.landing-content {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  background: rgba(34, 42, 50, 0.80);
+  padding: 48px 32px 40px 32px;
+  border-radius: 20px;
+  box-shadow: 0 12px 40px rgba(25, 118, 210, 0.18), 0 2px 8px rgba(0,0,0,0.12);
+  max-width: 400px;
+  width: 90%;
+  margin: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.landing-profile-pic {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.25);
+  margin-bottom: 18px;
+  border: 4px solid #fff;
+  background: #fff;
+}
+
+.landing-name {
+  font-size: 1.25rem;
+  color: #fff;
+  margin-bottom: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.landing-skills {
+  font-size: 1.08rem;
+  color: #ffd600;
+  margin-bottom: 18px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.landing-title {
+  font-size: 2.1rem;
+  margin-bottom: 12px;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 8px rgba(25, 118, 210, 0.15);
+}
+
+.landing-desc {
+  font-size: 1.13rem;
+  color: #e3f2fd;
+  margin-bottom: 32px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.enter-btn {
+  padding: 14px 38px;
+  font-size: 1.13rem;
+  background: linear-gradient(90deg, #ffd600 0%, #1976d2 100%);
+  color: #222;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 16px rgba(25, 118, 210, 0.18);
+  transition: background 0.2s, color 0.2s, transform 0.2s;
+}
+
+.enter-btn:hover {
+  background: linear-gradient(90deg, #1976d2 0%, #ffd600 100%);
+  color: #fff;
+  transform: translateY(-2px) scale(1.04);
+}
+
+/* Hide landing page after entering */
+.landing-page.hide {
+  display: none;
+}
+
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  background: rgba(34, 42, 50, 0.98);
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 10000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.3s;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+}
+
+.nav-logo {
+  color: #fff; /* Changed from #ffd600 to white */
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: color 0.2s;
+}
+
+.nav-logo:hover,
+.nav-logo:focus {
+  color: #8e24aa; /* Accent color on hover */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.08rem;
+  padding: 8px 0;
+  transition: color 0.2s;
+  position: relative;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+  color: #1976d2;
+}
+
+.nav-links a.active,
+.nav-links a:focus {
+  color: #8e24aa; /* Accent color instead of yellow */
+  border-bottom: 2px solid #8e24aa;
+}
+
+/* Section spacing and max-width */
+section, .achievements-section, .references-section {
+  max-width: 950px;
+  margin: 40px auto 0 auto;
+  padding: 32px 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+  background: linear-gradient(120deg, #1976d2 0%, #8e24aa 100%);
+  color: #fff;
+}
+
+/* Headings */
+h1, h2, .section-title, .achievements-title {
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+h2, .section-title, .achievements-title {
+  font-size: 2rem;
+}
+
+/* Hero Section */
+.hero-section {
+  background: none;
+  box-shadow: none;
+  margin-top: 80px;
+  padding-top: 0;
+  gap: 10px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.18);
+  margin-top: 0;
+  border: 4px solid #fff;
+}
+
+.name {
+  margin-top: 8px;
+  font-size: 1.5rem;
+  color: #fff; /* Changed from #ffd600 to white */
+}
+
+.web-skills {
+  color: #fff;
+  font-size: 1.1rem;
+  margin-bottom: 0;
+}
+
+/* Achievements Section */
+.achievements-section {
+  background:
+    linear-gradient(120deg, rgba(25, 118, 210, 0.85) 0%, rgba(142, 36, 170, 0.85) 100%),
+    url('https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
+  /* The Unsplash image above is modern/learning themed. Replace with your own ALX-related image if desired. */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.12);
+  border-radius: 18px;
+  max-width: 950px;
+  margin: 40px auto 0 auto;
+  padding: 32px 20px;
+  color: #fff;
+}
+
+.achievement-item {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 32px;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.achievement-certificate {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.18);
+  border: 3px solid #8e24aa; /* Changed border from yellow to accent */
+  background: #fff;
+}
+
+.achievement-details > div {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.achievement-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.achievement-details > div,
+.achievement-details .achievement-desc {
+  background: #f3e6fa; /* Light purple background instead of yellow */
+  color: #333;
+  border-radius: 8px;
+  padding: 16px 18px;
+  margin-bottom: 10px;
+}
+
+.achievement-desc {
+  font-size: 1.1rem;
+  color: #333;
+  font-weight: 600;
+  margin: 0 0 10px 0;
+  display: block;
+  background: #f3e6fa; /* Light purple background instead of yellow */
+}
+
+/* Services/Skills Section */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.service-card {
+  background: #fff;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 28px 18px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(25, 118, 210, 0.18);
+}
+
+.service-card h3 {
+  color: #1976d2;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.service-card p {
+  color: #333;
+  font-size: 1rem;
+}
+
+/* References Section */
+.references-section {
+  background: #fff;
+  color: #333;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+}
+
+.reference-box {
+  background: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  padding: 18px 12px;
+  margin: 10px;
+  width: 260px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.reference-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.reference-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #1976d2;
+}
+
+.reference-description {
+  font-size: 0.98rem;
+  color: #555;
+}
+
+/* Footer */
+.footer {
+  background: #222;
+  color: #fff; /* Changed from #ffd600 to white */
+  text-align: center;
+  padding: 28px 12px;
+  margin-top: 40px;
+  font-family: Arial, sans-serif;
+  font-size: 1rem;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.18);
+}
+
+.footer-content p {
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+/* Home Contact Section */
+.home-contact h3 {
+  text-align: center;
+  width: 100%;
+  margin: 40px auto 12px auto; /* Increased top margin to push down */
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Virtual Assistance Services Section */
+.virtual-assistance-section {
+  background: linear-gradient(120deg, #232946 0%, #393e46 100%);
+  /* Muted deep blue/gray for a calm, professional look */
+  color: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.10);
+  max-width: 950px;
+  margin: 40px auto 0 auto;
+  padding: 32px 20px;
+  text-align: center;
+}
+
+.virtual-service-card {
+  background: #f3e6fa;
+  color: #232946;
+  border-radius: 14px;
+  box-shadow: 0 2px 10px rgba(25, 118, 210, 0.10);
+  padding: 24px 16px 18px 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.virtual-service-card h3 {
+  font-size: 1.15rem;
+  color: #8e24aa;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.virtual-service-card p {
+  font-size: 1rem;
+  color: #232946;
+  margin: 0;
+}
+
+.virtual-intro {
+  font-size: 1.15rem;
+  margin-bottom: 28px;
+  color: #e0e0e0;
+}
+
+.virtual-note {
+  margin-top: 18px;
+  font-size: 1.13rem;
+  color: #fff;
+  background: rgba(25, 118, 210, 0.18);
+  border-radius: 8px;
+  padding: 14px 10px;
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  section, .achievements-section, .references-section {
+    max-width: 98vw;
+    padding: 18px 4vw;
+  }
+  .achievement-item {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar-container {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 8px;
+  }
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: flex-start;
+  }
+  .profile-pic {
+    width: 120px;
+    height: 120px;
+  }
+  .achievement-certificate {
+    max-width: 100%;
+    width: 100%;
+  }
+  .reference-box {
+    width: 98vw;
+    margin: 10px 0;
+  }
+}
+
+.home-contact h1 {
+  text-align: center;
+  margin-top: 18px; /* Add extra space above the h1 */
+}
+
+.home {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+  background: 
+    linear-gradient(120deg, rgba(24, 31, 43, 0.82) 0%, rgba(34, 42, 50, 0.82) 100%),
+    url('image/Nairobi city.jpeg') center/cover no-repeat;
+  /* The dark blue/gray overlay ensures content remains readable over the Nairobi city image */
+  transition: background 0.4s;
+}
+
+.home:hover {
+  background: 
+    linear-gradient(120deg, rgba(34, 42, 50, 0.90) 0%, rgba(24, 31, 43, 0.90) 100%),
+    url('image/Nairobi city.jpeg') center/cover no-repeat;
+}
+
+.virtual-services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px; /* Increased gap for more space between cards */
+  margin-bottom: 24px;
 }

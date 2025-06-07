@@ -329,24 +329,57 @@ h1 {
   height: 100vh;
   min-height: 100vh;
   min-width: 100vw;
-  background: 
-    linear-gradient(120deg, rgba(25, 118, 210, 0.85) 0%, rgba(46, 30, 46, 0.92) 100%),
-    url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
   z-index: 9999;
 }
 
+.landing-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 0;
+  width: 100vw;
+  height: 100vh;
+  background: 
+    linear-gradient(120deg, rgba(25, 118, 210, 0.85) 0%, rgba(46, 30, 46, 0.92) 100%),
+    url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  animation: landingMotion 18s linear infinite alternate;
+  background-size: 110% 110%;
+  background-position: center;
+  pointer-events: none;
+  transition: background 0.4s;
+}
+
+@keyframes landingMotion {
+  0% {
+    background-position: 50% 50%;
+    filter: blur(0px) brightness(1);
+  }
+  30% {
+    background-position: 60% 55%;
+    filter: blur(1.5px) brightness(1.05);
+  }
+  60% {
+    background-position: 40% 45%;
+    filter: blur(1px) brightness(0.98);
+  }
+  100% {
+    background-position: 55% 60%;
+    filter: blur(0.5px) brightness(1.02);
+  }
+}
+
 .landing-content {
+  position: relative;
+  z-index: 1;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
+  height: 100vh;      /* Ensure it fills the viewport */
   min-height: 100vh;
-  width: 100%;
+  width: 100vw;
   text-align: center;
   color: #fff;
   background: rgba(34, 42, 50, 0.80);
@@ -354,11 +387,6 @@ h1 {
   border-radius: 20px;
   box-shadow: 0 12px 40px rgba(25, 118, 210, 0.18), 0 2px 8px rgba(0,0,0,0.12);
   max-width: 400px;
-  width: 90%;
-  margin: 0 16px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .landing-profile-pic {
@@ -448,8 +476,9 @@ h1 {
   padding: 0 32px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start; /* changed from space-between to flex-start */
   height: 60px;
+  position: relative;
 }
 
 .nav-logo {
@@ -504,7 +533,7 @@ h1 {
   background: none;
   border: none;
   cursor: pointer;
-  margin-left: 12px;
+  margin-left: auto;
   z-index: 10001;
   padding: 0;
   width: 38px;

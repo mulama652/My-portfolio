@@ -498,6 +498,68 @@ h1 {
   border-bottom: 2px solid #8e24aa;
 }
 
+/* Hamburger menu styles */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 12px;
+  z-index: 10001;
+}
+
+.nav-toggle .bar {
+  width: 28px;
+  height: 4px;
+  background: #fff;
+  margin: 4px 0;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+@media (max-width: 900px) {
+  .nav-toggle {
+    display: flex;
+  }
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: rgba(34, 42, 50, 0.98);
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    padding: 18px 0 18px 18px;
+    gap: 18px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    border-radius: 0 0 12px 12px;
+    display: none;
+    transition: all 0.3s;
+    z-index: 10001;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .navbar-container {
+    position: relative;
+  }
+}
+
+@media (max-width: 700px) {
+  .nav-links {
+    width: 100vw;
+    left: 0;
+    right: 0;
+    padding: 18px 0 18px 24px;
+    border-radius: 0 0 18px 18px;
+  }
+}
+
 /* Section spacing and max-width */
 section, .achievements-section, .references-section {
   max-width: 950px;

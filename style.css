@@ -342,7 +342,8 @@ h1 {
   height: 100vh;
   background: 
     linear-gradient(120deg, rgba(25, 118, 210, 0.85) 0%, rgba(46, 30, 46, 0.92) 100%),
-    url('https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+    url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1500&q=80') center/cover no-repeat;
+  /* The Unsplash image above shows a professional office/assistant scene. Replace with your own if desired. */
   animation: landingMotion 18s linear infinite alternate;
   background-size: 110% 110%;
   background-position: center;

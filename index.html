@@ -29,9 +29,7 @@
     <div class="navbar-container">
       <a href="#home" class="nav-logo">Portfolio</a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+        <img src="image/icon.png" alt="Menu" class="hamburger-icon" />
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
@@ -281,10 +279,18 @@
   document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
+    function closeMenuOnResize() {
+      if (window.innerWidth > 900) {
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
+        navLinks.style.display = '';
+      }
+    }
     navToggle.addEventListener('click', function () {
       navLinks.classList.toggle('open');
       navToggle.classList.toggle('open');
     });
+    window.addEventListener('resize', closeMenuOnResize);
   });
 </script>
 </body>

@@ -1,6 +1,12 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   background-color: #181f2b; /* Deep blue/gray for a modern, professional look */
-  font-family: Poppins, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
  
 }
 .hero-section {
@@ -57,7 +63,7 @@ body {
 
 .name {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   color: rgb(241, 240, 240);
   font-size: 24px;
   font-weight: bold;
@@ -65,7 +71,7 @@ body {
 
 .web-skills {
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   color: rgb(254, 252, 252);
 }
 
@@ -73,62 +79,60 @@ h1 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   text-align: center;
-  font-family: Arial;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: bold,
     /* text- decoration: break-inside; */
 }
 
 
 .about-section {
-  background: 
-    linear-gradient(120deg, rgba(25, 118, 210, 0.85) 0%, rgba(142, 36, 170, 0.85) 100%),
-    url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
-  /* The Unsplash image above is tech/portfolio themed. Replace with your own if desired. */
-  padding: 15px;
-  border-radius: 18px;
-  margin: 15px auto;
-  max-width: 900px;
   text-align: center;
-  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.12), 0 2px 8px rgba(142, 36, 170, 0.10);
-  color: #fff;
+  color: #e8ecf3;
   position: relative;
   overflow: hidden;
 }
 
+.story-wrapper {
+  max-width: 820px;
+  margin: 10px auto 0 auto;
+  padding: 28px 26px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  text-align: left;
+}
+
 .story {
-  max-width: 800px;
-  margin: 15px auto; /* Reduced margin */
-  padding: 15px; /* Reduced padding */
-  background-color: #ffffff;
-  color: #333333;
-  font-size: 1.125rem;
-  line-height: 1.6; /* Slightly reduced line height */
-  font-family: 'Roboto', sans-serif;
-  text-align: justify;
-  text-indent: 1.5em; /* Reduced text indent */
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
-  border: 1px solid #e0e0e0;
+  margin: 0 0 18px 0;
+  font-size: 1.06rem;
+  line-height: 1.8;
+  font-family: Poppins, Arial, sans-serif;
+  color: #cdd6e4;
 }
 
-/* Paragraph spacing inside .story */
-.story p {
-  margin-bottom: 1.5em;
+.story:last-of-type {
+  margin-bottom: 0;
 }
 
-/* section */
-.story p:first-of-type::first-letter {
-  font-size: 2.5em;
-  font-weight: bold;
+/* Lead-in drop cap on the first paragraph */
+.story-wrapper p:first-of-type::first-letter {
+  font-size: 2.6em;
+  font-weight: 700;
   float: left;
-  line-height: 1;
-  padding-right: 8px;
-  color: #1976d2;
-  transition: color 0.3s ease; /* Added transition for hover effect */
+  line-height: 0.9;
+  padding: 2px 10px 0 0;
+  color: #ffd600;
 }
 
-.story p:first-of-type::first-letter:hover {
-  color: #ff5722; /* Changes color on hover */
+.story-list {
+  margin: 20px 0 0 0;
+  padding-left: 1.2em;
+  color: #b9c4d4;
+  line-height: 1.8;
+}
+
+.story-list li::marker {
+  color: #ffd600;
 }
 
 .My {
@@ -137,7 +141,7 @@ h1 {
   line-height: 1.8; /* Increased line height for better readability */
   margin: 20px 0;
   text-align: justify; /* Changed alignment for better text flow */
-  font-family: 'Arial', sans-serif;
+  font-family: Poppins, Arial, sans-serif;
 }
 
 .poster {
@@ -146,7 +150,7 @@ h1 {
   line-height: 1.6;
   margin: 20px 0;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -165,7 +169,7 @@ h1 {
   line-height: 1.6;
   margin: 20px 0;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -187,19 +191,19 @@ h1 {
   
 
 .poster-item {
-  background-color: #fafafa;
-  border-radius: 10px;
-  padding: 15px;
-  width: 300px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 14px;
+  width: 280px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .poster-item:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.5);
+  border-color: rgba(255, 214, 0, 0.45);
 }
 
 .poster-item img {
@@ -209,10 +213,10 @@ h1 {
 }
 
 .poster-description {
-  margin-top: 10px;
-  color: #000000;
-  font-size: 16px;
-  font-weight: bold;
+  margin-top: 12px;
+  color: #e8ecf3;
+  font-size: 0.95rem;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -222,7 +226,7 @@ h1 {
   text-align: center;
   padding: 30px 20px;
   margin-top: 50px;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 15px;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.3);
 }
@@ -283,11 +287,7 @@ h1 {
 /* Services-Section */
 #services {
   padding: 40px;
-  background-image: url('your-image.jpg'); /* Replace with your image path */
-  background-size: cover;       /* Makes sure the image covers the entire container */
-  background-position: center;  /* Centers the image */
-  background-repeat: no-repeat; /* Prevents the image from repeating */
-  color: rgb(255, 251, 251);  
+  color: #e8ecf3;
 }
 
 .services-container {
@@ -297,10 +297,13 @@ h1 {
 }
 
 .service-card {
-  background-color: rgb(255, 255, 255);
-  padding: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #cdd6e4;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
+  padding: 28px 18px;
+  transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
 }
 
 .service-card h3 {
@@ -493,13 +496,13 @@ h1 {
 
 .nav-logo:hover,
 .nav-logo:focus {
-  color: #8e24aa; /* Accent color on hover */
+  color: #ffd600;
 }
 
 .nav-links {
   list-style: none;
   display: flex;
-  gap: 28px;
+  gap: 22px;
   margin: 0;
   padding: 0;
 }
@@ -519,13 +522,13 @@ h1 {
 
 .nav-links a:hover,
 .nav-links a:focus {
-  color: #1976d2;
+  color: #ffd600;
 }
 
 .nav-links a.active,
 .nav-links a:focus {
-  color: #8e24aa; /* Accent color instead of yellow */
-  border-bottom: 2px solid #8e24aa;
+  color: #ffd600;
+  border-bottom: 2px solid #ffd600;
 }
 
 /* Hamburger menu styles */
@@ -597,7 +600,7 @@ h1 {
     box-shadow: none;
     width: auto;
     padding: 0;
-    gap: 28px;
+    gap: 22px;
   }
 }
 
@@ -607,9 +610,11 @@ section, .achievements-section, .references-section {
   margin: 40px auto 0 auto;
   padding: 32px 20px;
   border-radius: 18px;
-  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
-  background: linear-gradient(120deg, #1976d2 0%, #8e24aa 100%);
-  color: #fff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e8ecf3;
+  scroll-margin-top: 84px;
 }
 
 /* Headings */
@@ -618,10 +623,12 @@ h1, h2, .section-title, .achievements-title {
   font-weight: 700;
   letter-spacing: 1px;
   margin-bottom: 18px;
+  color: #fff;
 }
 
 h2, .section-title, .achievements-title {
   font-size: 2rem;
+  color: #ffd600;
 }
 
 /* Hero Section */
@@ -657,19 +664,17 @@ h2, .section-title, .achievements-title {
 
 /* Achievements Section */
 .achievements-section {
-  background:
-    linear-gradient(120deg, rgba(25, 118, 210, 0.85) 0%, rgba(142, 36, 170, 0.85) 100%),
-    url('https://images.unsplash.com/photo-1503676382389-4809596d5290?auto=format&fit=crop&w=1000&q=80') center/cover no-repeat;
-  /* The Unsplash image above is modern/learning themed. Replace with your own ALX-related image if desired. */
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 8px 32px rgba(25, 118, 210, 0.12);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
   border-radius: 18px;
   max-width: 950px;
   margin: 40px auto 0 auto;
   padding: 32px 20px;
-  color: #fff;
+  color: #e8ecf3;
 }
 
 .achievement-item {
@@ -686,7 +691,7 @@ h2, .section-title, .achievements-title {
   max-width: 320px;
   border-radius: 12px;
   box-shadow: 0 4px 24px rgba(25, 118, 210, 0.18);
-  border: 3px solid #8e24aa; /* Changed border from yellow to accent */
+  border: 1px solid rgba(255, 255, 255, 0.12);
   background: #fff;
 }
 
@@ -703,9 +708,10 @@ h2, .section-title, .achievements-title {
 
 .achievement-details > div,
 .achievement-details .achievement-desc {
-  background: #f3e6fa; /* Light purple background instead of yellow */
-  color: #333;
-  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #cdd6e4;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
   padding: 16px 18px;
   margin-bottom: 10px;
 }
@@ -727,41 +733,45 @@ h2, .section-title, .achievements-title {
 }
 
 .service-card {
-  background: #fff;
-  color: #333;
+  background: rgba(255, 255, 255, 0.05);
+  color: #cdd6e4;
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.18);
   padding: 28px 18px;
   transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .service-card:hover {
   transform: translateY(-6px) scale(1.03);
-  box-shadow: 0 8px 24px rgba(25, 118, 210, 0.18);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  border-color: rgba(255, 214, 0, 0.45);
 }
 
 .service-card h3 {
-  color: #1976d2;
+  color: #fff;
   margin-bottom: 10px;
   font-size: 1.2rem;
 }
 
 .service-card p {
-  color: #333;
+  color: #b9c4d4;
   font-size: 1rem;
 }
 
 /* References Section */
 .references-section {
-  background: #fff;
-  color: #333;
-  box-shadow: 0 4px 24px rgba(25, 118, 210, 0.08);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e8ecf3;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.28);
 }
 
 .reference-box {
-  background: #f5f5f5;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(25, 118, 210, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
   padding: 18px 12px;
   margin: 10px;
   width: 260px;
@@ -781,25 +791,39 @@ h2, .section-title, .achievements-title {
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 6px;
-  color: #1976d2;
+  color: #fff;
 }
 
 .reference-description {
   font-size: 0.98rem;
-  color: #555;
+  color: #b9c4d4;
 }
 
 /* Footer */
 .footer {
-  background: #222;
-  color: #fff; /* Changed from #ffd600 to white */
+  background: #141a24;
+  color: #fff;
   text-align: center;
-  padding: 28px 12px;
+  padding: 36px 12px;
   margin-top: 40px;
-  font-family: Arial, sans-serif;
+  font-family: Poppins, Arial, sans-serif;
   font-size: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 0 0 18px 18px;
   box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.18);
+}
+
+.footer a {
+  color: #ffd600;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 214, 0, 0.35);
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.footer a:hover,
+.footer a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
 }
 
 .footer-content p {
@@ -819,9 +843,9 @@ h2, .section-title, .achievements-title {
 
 /* Virtual Assistance Services Section */
 .virtual-assistance-section {
-  background: linear-gradient(120deg, #232946 0%, #393e46 100%);
-  /* Muted deep blue/gray for a calm, professional look */
-  color: #fff;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e8ecf3;
   border-radius: 18px;
   box-shadow: 0 4px 24px rgba(25, 118, 210, 0.10);
   max-width: 950px;
@@ -831,8 +855,9 @@ h2, .section-title, .achievements-title {
 }
 
 .virtual-service-card {
-  background: #f3e6fa;
-  color: #232946;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #cdd6e4;
   border-radius: 14px;
   box-shadow: 0 2px 10px rgba(25, 118, 210, 0.10);
   padding: 24px 16px 18px 16px;
@@ -844,38 +869,39 @@ h2, .section-title, .achievements-title {
 
 .virtual-service-card h3 {
   font-size: 1.15rem;
-  color: #8e24aa;
+  color: #fff;
   margin-bottom: 8px;
   font-weight: 600;
 }
 
 .virtual-service-card p {
   font-size: 1rem;
-  color: #232946;
+  color: #b9c4d4;
   margin: 0;
 }
 
 .virtual-intro {
   font-size: 1.15rem;
   margin-bottom: 28px;
-  color: #e0e0e0;
+  color: #cdd6e4;
 }
 
 .virtual-note {
   margin-top: 18px;
-  font-size: 1.13rem;
-  color: #fff;
-  background: rgba(25, 118, 210, 0.18);
-  border-radius: 8px;
-  padding: 14px 10px;
+  font-size: 1.05rem;
+  color: #ffd600;
+  background: rgba(255, 214, 0, 0.10);
+  border: 1px solid rgba(255, 214, 0, 0.28);
+  border-radius: 10px;
+  padding: 14px 12px;
   font-weight: 600;
 }
 
 /* Responsive Design */
 @media (max-width: 900px) {
   section, .achievements-section, .references-section {
-    max-width: 98vw;
-    padding: 18px 4vw;
+    max-width: 100%;
+    padding: 22px 16px;
   }
   .achievement-item {
     grid-template-columns: 1fr;
@@ -904,14 +930,18 @@ h2, .section-title, .achievements-title {
     width: 100%;
   }
   .reference-box {
-    width: 98vw;
+    width: 100%;
     margin: 10px 0;
   }
 }
 
 .home-contact h1 {
   text-align: center;
-  margin-top: 18px; /* Add extra space above the h1 */
+  margin: 18px auto 0 auto;
+  font-size: 2rem;
+  line-height: 1.35;
+  font-weight: 700;
+  max-width: 760px;
 }
 
 .home {

@@ -41,9 +41,26 @@ Edits need no rebuild or restart: write the file, then refresh (nginx reads stra
 from the mounted checkout). There is no live-reload watcher, so a browser refresh —
 or the preview's reload action — is what picks up a change.
 
+## Design system (keep new work on it)
+`style.css` defines one dark theme: page `#181f2b`, panels `rgba(255,255,255,0.04)`,
+cards `rgba(255,255,255,0.05)`, body text `#cdd6e4`/`#e8ecf3`, accent `#ffd600`.
+The shared `section, .achievements-section, .references-section` rule frames every
+section (max-width, padding, radius, border, shadow), so a new section only needs the
+content. Poppins is loaded from Google Fonts in `index.html`; the whole stylesheet
+uses that one stack. Sections carry `scroll-margin-top` so anchor links clear the
+sticky navbar.
+
 ## Notes
-- `index.html` loads icons from `icons8.com` and `style.css` uses Unsplash
-  backgrounds; those need network access from the **visitor's browser**, not from
-  a container.
-- `style.css` references `url('your-image.jpg')`, which does not exist in the repo.
-  That is pre-existing and harmless.
+- `index.html` loads the Poppins webfont from Google Fonts and icons from
+  `icons8.com`, and the intro overlay uses an Unsplash background; those need
+  network access from the **visitor's browser**, not from a container.
+- `image/icon.png` is the mobile menu button: a 64x64 PNG of white bars on a
+  transparent background. It must stay transparent — the navbar is dark.
+- All referenced imagery was resized for the web (longest edge 400-900px, JPEG
+  quality 84-85); the served page now pulls ~640KB of images instead of ~4.3MB.
+  `Card.jpeg`, `back.jpeg`, `sunday.jpeg`, `thank.jpeg` and `PRAYER.jpeg` are not
+  referenced by any page.
+- The hero background is `image/Nairobi city.jpeg` at only 275x183, stretched
+  full-bleed, so it renders soft — only a larger photo will sharpen it.
+- The intro overlay is dismissed by any menu tap, and skipped entirely when the URL
+  already carries a section hash (except `#home`).

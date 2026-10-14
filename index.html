@@ -4,7 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ian Mulama</title>
+  <title>Ian Mulama — Designer, Developer &amp; Video Editor</title>
+  <meta name="description"
+    content="Portfolio of Ian Mulama — a Nairobi-based teacher, graphic designer, video editor and virtual assistant. Poster design, web design, photography and administrative support.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ian Mulama — Designer, Developer &amp; Video Editor">
+  <meta property="og:description"
+    content="Poster design, web design, photography, video editing and virtual assistance from Nairobi.">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/png" href="image/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <script>
     // Smooth scroll to main content
@@ -17,7 +28,7 @@
 <body>
   <section class="landing-page">
     <div class="landing-content">
-      <img src="image/My photo.jpg" alt="My Photo" class="landing-profile-pic">
+      <img src="image/My photo.jpg" alt="Ian Mulama" class="landing-profile-pic">
       <p class="landing-name">Hi, I'm Ian Mulama, a creative designer and developer...</p>
       <p class="landing-skills">Web Developer | Designer | Video Editor</p>
       <button class="enter-btn" onclick="enterPortfolio()">Enter Portfolio</button>
@@ -25,19 +36,21 @@
   </section>
 
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav class="navbar" aria-label="Main">
     <div class="navbar-container">
       <a href="#home" class="nav-logo">Portfolio</a>
       <div style="flex:1"></div>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-        <img src="image/icon.png" alt="Menu" class="hamburger-icon" />
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation" aria-controls="nav-links"
+        aria-expanded="false">
+        <img src="image/icon.png" alt="" class="hamburger-icon" />
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
-        <li><a href="#skillful-journey">About</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#posters">Posters</a></li>
         <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#virtual-assistance">Service</a></li>
-        <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#virtual-assistance">Virtual Assistance</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -60,7 +73,7 @@
         <h1>Explore my work and skills as a designer and developer.</h1>
       </div>
       <div class="hero-section">
-        <img src="image/My photo.jpg" alt="My Photo" width="200" height="200" class="profile-pic">
+        <img src="image/My photo.jpg" alt="Ian Mulama" width="200" height="200" class="profile-pic">
         <p class="name">Hi, I'm Ian Mulama, a creative designer and developer...</p>
         <p class="web-skills">Web Developer | Designer | Video Editor</p>
       </div>
@@ -71,61 +84,62 @@
       <h2 id="skillful-journey">The Skillful Journey</h2>
       <div class="story-wrapper">
         <p class="story">
-          Based in Nairobi, I am Ian Mulama—a passionate, multi-skilled professional dedicated to excellence in education, design, and digital media. As a teacher trainee at Tangaza University, specializing in History and Kiswahili, I blend academic rigor with hands-on experience to deliver meaningful learning outcomes and creative solutions.
+          Based in Nairobi, I am Ian Mulama — a multi-skilled professional working across education, design and digital
+          media. I am a teacher trainee at Tangaza University specialising in History and Kiswahili, and I bring the
+          same care to a classroom, a poster or an edit.
         </p>
         <p class="story">
-          My teaching journey began with a transformative school practice at Nkaimurunya Comprehensive School (May–August 2024). Immersed in real classroom dynamics, I honed my ability to translate theory into practice—preparing schemes of work, delivering engaging lessons, and adapting to diverse learning needs. This experience strengthened my confidence, adaptability, and commitment to student success.
+          My teaching practice began at Nkaimurunya Comprehensive School in 2024, where I prepared schemes of work,
+          delivered engaging lessons and adapted to diverse learning needs. Returning in early 2025, I deepened my
+          classroom management, curriculum implementation and communication skills — building learning environments
+          that are patient, purposeful and results-driven.
         </p>
         <p class="story">
-          Continuing at the same school (January–April 2025), I deepened my expertise in classroom management, curriculum implementation, and effective communication. I embraced flexibility, patience, and creativity, ensuring every lesson was purposeful and impactful. These skills empower me to create positive, results-driven learning environments.
+          Beyond the classroom I served as a clerk with the Independent Electoral and Boundaries Commission during
+          Kenya's 2022 General Elections, and I work on the media team at Karen Africa Gospel Church handling
+          photography, video editing and poster design. Those roles taught me precision, confidentiality and how to
+          tell a story visually. Let's collaborate to bring your vision to life.
         </p>
-        <p class="story">
-          My commitment to service extends beyond the classroom. As a clerk with the Independent Electoral and Boundaries Commission (IEBC) during Kenya’s 2022 General Elections, I demonstrated integrity, precision, and resilience under pressure. This role sharpened my skills in public service, data management, and confidential operations—qualities I bring to every professional engagement.
-        </p>
-        <p class="story">
-          Creativity is at the heart of my work. Serving on the media team at Karen Africa Gospel Church, I specialize in photography, video editing, and poster design. I capture moments, craft compelling visual stories, and deliver uplifting content that resonates. My technical proficiency in video production and graphic design ensures every message is communicated with clarity and artistry.
-        </p>
-        <p class="story">
-          These diverse experiences have shaped me into a disciplined, empathetic, and innovative professional. I value teamwork, continuous learning, and using my skills to make a positive impact. Every project I undertake is guided by a commitment to quality, integrity, and client satisfaction.
-        </p>
-        <p class="story">
-          As I advance in my career, I am dedicated to inspiring others, leading with purpose, and delivering solutions that exceed expectations. Let’s collaborate to bring your vision to life.
-        </p>
+        <ul class="story-list">
+          <li>Disciplined, empathetic and innovative</li>
+          <li>Clear communication with clients and teams</li>
+          <li>Quality, integrity and confidentiality</li>
+          <li>Continuous learning and teamwork</li>
+        </ul>
       </div>
     </section>
-    <div>
-      <h1>Poster Designs</h1>
-      <p class="N">Here are my poster designs</p>
-    </div>
-    <!-- container -->
-    <div class="poster-container">
+    <section id="posters" class="posters-section">
+      <h2>Poster Designs</h2>
+      <div class="poster-container">
       <div class="poster-item">
-        <img src="image/Ignite.jpeg" alt="Ignite" width="200" height="200" class="poster-pic">
+        <img src="image/Ignite.jpeg" alt="Ignite Campus Experience poster" width="200" height="200"
+          class="poster-pic" loading="lazy" decoding="async">
         <p class="poster-description">Ignite Campus</p>
       </div>
       <div class="poster-item">
-        <img src="image/prayeragc.jpeg" alt="prayeragc">
+        <img src="image/prayeragc.jpeg" alt="Prayer Service poster" loading="lazy" decoding="async">
         <p class="poster-description">Prayer Service</p>
       </div>
 
       <div class="poster-item">
-        <img src="image/Kesha.jpeg" alt="Kesha Poster">
+        <img src="image/Kesha.jpeg" alt="Kesha Overnight Worship poster" loading="lazy" decoding="async">
         <p class="poster-description">Kesha Overnight Worship Poster</p>
       </div>
 
       <div class="poster-item">
-        <img src="image/Dinner.jpeg" alt="Dinner">
+        <img src="image/Dinner.jpeg" alt="Valentine's Dinner poster" loading="lazy" decoding="async">
         <p class="poster-description">Valentines Dinner</p>
       </div>
 
       <div class="poster-item">
-        <img src="image/Un.jpeg" alt="Un">
-        <p class="poster-description">UN Career Expoxision</p>
+        <img src="image/Un.jpeg" alt="UN Career Exposition poster" loading="lazy" decoding="async">
+        <p class="poster-description">UN Career Exposition</p>
       </div>
-    </div>
+      </div>
+    </section>
     <!-- service-section -->
     <section id="services">
-      <h2 id="skills">Services I Offer</h2>
+      <h2>Services I Offer</h2>
       <div class="services-container">
         <div class="service-card">
           <h3>Graphic Design</h3>
@@ -162,14 +176,15 @@
     <!-- Achievements section -->
     <section id="achievements" class="achievements-section">
       <h2 class="achievements-title">Achievements</h2>
-      <div class="achievement-item" style="display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 32px;">
-        <img src="image/ALX.jpeg" alt="ALX Certificate" class="achievement-certificate">
-        <div class="achievement-details" style="max-width: 380px; text-align: left;">
-          <div style="background: #fff2cc; color: #333; border-radius: 8px; padding: 16px 18px; margin-bottom: 14px;">
+      <div class="achievement-item">
+        <img src="image/ALX.jpeg" alt="ALX Virtual Assistant certificate of achievement"
+          class="achievement-certificate" loading="lazy" decoding="async">
+        <div class="achievement-details">
+          <div class="achievement-note">
             <strong>About ALX:</strong><br>
             The ALX program is a leading professional training initiative focused on empowering young Africans with in-demand digital, business, and virtual assistance skills. As a graduate of the ALX Virtual Assistant track, I have developed a robust foundation in supporting businesses and entrepreneurs remotely, ensuring productivity and efficiency in a digital-first world.
           </div>
-          <div style="background: #fff2cc; color: #333; border-radius: 8px; padding: 16px 18px; margin-bottom: 14px;">
+          <div class="achievement-note">
             <strong>Virtual Assistant Skills Acquired:</strong>
             <ul style="margin-left: 1em; margin-top: 10px;">
               <li>Proficient writing</li>
@@ -182,7 +197,7 @@
               <li>Customer service excellence</li>
             </ul>
           </div>
-          <div style="background: #fff2cc; color: #333; border-radius: 8px; padding: 16px 18px;">
+          <div class="achievement-note">
             Through the ALX Virtual Assistant program, I have learned to deliver high-quality administrative and operational support, manage schedules, handle communications, and provide exceptional service to clients and teams. My training has equipped me to adapt quickly, solve problems efficiently, and contribute to business growth in a remote environment.
           </div>
         </div>
@@ -196,32 +211,32 @@
       </p>
       <div class="virtual-services-grid">
         <div class="virtual-service-card">
-          <img src="https://img.icons8.com/color/96/000000/gmail-new.png" alt="Gmail Management" class="virtual-icon">
+          <img src="https://img.icons8.com/color/96/000000/gmail-new.png" alt="Gmail Management" class="virtual-icon" loading="lazy" decoding="async">
           <h3>Gmail Management</h3>
           <p>Organize your inbox, filter important emails, respond promptly, and ensure you never miss a message.</p>
         </div>
         <div class="virtual-service-card">
-          <img src="https://img.icons8.com/color/96/000000/calendar--v1.png" alt="Scheduling Meetings" class="virtual-icon">
+          <img src="https://img.icons8.com/color/96/000000/calendar--v1.png" alt="Scheduling Meetings" class="virtual-icon" loading="lazy" decoding="async">
           <h3>Scheduling Meetings</h3>
           <p>Coordinate and schedule meetings, send invites, and manage reminders so your calendar runs smoothly.</p>
         </div>
         <div class="virtual-service-card">
-          <img src="https://img.icons8.com/color/96/000000/around-the-globe.png" alt="Travel Planning" class="virtual-icon">
+          <img src="https://img.icons8.com/color/96/000000/around-the-globe.png" alt="Travel Planning" class="virtual-icon" loading="lazy" decoding="async">
           <h3>Travel Planning</h3>
           <p>Research destinations, book flights and hotels, and create detailed travel itineraries for business or leisure.</p>
         </div>
         <div class="virtual-service-card">
-          <img src="https://img.icons8.com/color/96/000000/edit-property.png" alt="Data Entry" class="virtual-icon">
+          <img src="https://img.icons8.com/color/96/000000/edit-property.png" alt="Data Entry" class="virtual-icon" loading="lazy" decoding="async">
           <h3>Data Entry</h3>
           <p>Accurately input, organize, and maintain your business data in spreadsheets, CRMs, or databases.</p>
         </div>
         <div class="virtual-service-card">
-          <img src="https://img.icons8.com/color/96/000000/google-slides.png" alt="Presentations" class="virtual-icon">
+          <img src="https://img.icons8.com/color/96/000000/google-slides.png" alt="Presentations" class="virtual-icon" loading="lazy" decoding="async">
           <h3>Prepare Presentations</h3>
           <p>Create visually engaging PowerPoint or Google Slides presentations tailored to your needs.</p>
         </div>
         <div class="virtual-service-card">
-          <img src="https://img.icons8.com/color/96/000000/planner.png" alt="Calendar Management" class="virtual-icon">
+          <img src="https://img.icons8.com/color/96/000000/planner.png" alt="Calendar Management" class="virtual-icon" loading="lazy" decoding="async">
           <h3>Calendar Management</h3>
           <p>Maintain and update your calendar, set reminders, and ensure you stay on top of all appointments and deadlines.</p>
         </div>
@@ -236,7 +251,7 @@
     <div class="references-container">
       <!-- Reference 1 -->
       <div class="reference-box">
-        <img src="image/Dennis.jpg" alt="Dennis 1" class="reference-img">
+        <img src="image/Dennis.jpg" alt="Dennis Nderitu" class="reference-img" loading="lazy" decoding="async">
         <h3 class="reference-name">Dennis Nderitu</h3>
         <p class="reference-description">
           A senior teacher and mentor during my teaching practice. He guided me on classroom management and effective lesson delivery.
@@ -245,16 +260,16 @@
 
       <!-- Reference 2 -->
       <div class="reference-box">
-        <img src="image/Isaac.jpeg" alt="Isaac 2" class="reference-img">
+        <img src="image/Isaac.jpeg" alt="Isaac Lemayanne" class="reference-img" loading="lazy" decoding="async">
         <h3 class="reference-name">Isaac Lemayanne</h3>
         <p class="reference-description">
-          My supervisor at IEBC during the 2022 elections. Her leadership and attention to detail taught me the importance of accuracy and integrity in public service.
+          My supervisor at IEBC during the 2022 elections, whose leadership and attention to detail taught me the importance of accuracy and integrity in public service.
         </p>
       </div>
 
       <!-- Reference 3 -->
       <div class="reference-box">
-        <img src="image/Rev.jpg" alt="Rev 3" class="reference-img">
+        <img src="image/Rev.jpg" alt="Rev. Jeff Cherry" class="reference-img" loading="lazy" decoding="async">
         <h3 class="reference-name">Rev. Jeff Cherry</h3>
         <p class="reference-description">
           Pastor at Karen Africa Gospel Church and my mentor in media ministry. He nurtured my creativity and spiritual leadership.
@@ -266,11 +281,11 @@
     <footer class="footer" id="contact">
       <div class="footer-content">
         <p>Contact Info: <br>
-          Phone: +254 0114 272 741 <br>
-          Email: ianmulama99@gmail.com <br>
+          Phone: <a href="tel:+2540114272741">+254 0114 272 741</a> <br>
+          Email: <a href="mailto:ianmulama99@gmail.com">ianmulama99@gmail.com</a> <br>
           Address: 974 - 00502 Langata, Nairobi
         </p>
-        <p>&copy; 2025 Ian Mulama. All rights reserved.</p>
+        <p>&copy; 2026 Ian Mulama. All rights reserved.</p>
       </div>
     </footer>
 
@@ -280,17 +295,42 @@
   document.addEventListener('DOMContentLoaded', function () {
     const navToggle = document.getElementById('nav-toggle');
     const navLinks = document.getElementById('nav-links');
+    const landing = document.querySelector('.landing-page');
+
+    function setExpanded(open) {
+      navToggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    // A shared link to a section should land on the content, not the intro overlay.
+    if (window.location.hash && window.location.hash !== '#home') {
+      landing.classList.add('hide');
+    }
+
+    // Tapping a menu item closes the menu and dismisses the intro overlay.
+    document.querySelectorAll('.nav-links a, .nav-logo').forEach(function (link) {
+      link.addEventListener('click', function () {
+        landing.classList.add('hide');
+        navLinks.classList.remove('open');
+        navToggle.classList.remove('open');
+        setExpanded(false);
+      });
+    });
+
     function closeMenuOnResize() {
       if (window.innerWidth > 900) {
         navLinks.classList.remove('open');
         navToggle.classList.remove('open');
         navLinks.style.display = '';
+        setExpanded(false);
       }
     }
+
     navToggle.addEventListener('click', function () {
-      navLinks.classList.toggle('open');
+      const open = navLinks.classList.toggle('open');
       navToggle.classList.toggle('open');
+      setExpanded(open);
     });
+
     window.addEventListener('resize', closeMenuOnResize);
   });
 </script>
